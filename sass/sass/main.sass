@@ -1,0 +1,84 @@
+// Селекторы шаблоны
+%item-base // одинаковые css свойства, селектор
+	display: inline-block
+	transition: all .5s ease
+	max-width: 320px
+
+.item-type-one
+	@extend %item-base // подключение одинаковых свойств
+	margin-top: 20px
+
+.item-type-two
+	@extend %item-base
+	margin-top: 20px
+
+// sass скрипты
+$summ: 10 + 20 / 2 // переменная
+$cn: content
+
+.selector
+	margin: 
+		top: $summ + px
+		bottom: 12px + 8px
+	background-color: trans + parent
+	#{$cn}: "con" + "tent"
+
+$in: интер
+
+.interpol
+	content: "#{$in}поляция"
+
+// Импорт
+//@import "media.sass"; // Импорт указаного файла
+//@import "media.scss";
+//@import "media"; // Импорт css файла или файлов с нижним подчеркиванием "_media.sass"
+
+.selector
+	margin-top: 10px
+
+	@at-root // Делает директиву ниже не дочерней, поднимает ее выше.
+		.item
+			background-color: #ccc
+
+	.item
+		background-color: #fff
+
+// Выражения
+// if - если
+$var: 6
+
+.selector
+	@if $var >= 5
+		content: '>= 5'
+	@else if $var <= 5
+		content: '<= 5'
+	@else
+		content: ''
+
+// for - для
+
+@for $i from 1 to 11 // through вместо to, если включительно
+	.item #{$i}
+		background-image: url(img/#{$i}.jpg) // Сформулирует 10 айтемов которые подключат количество картинок указаное в for
+
+// each - каждый, так же как for только с словами
+
+@each $name in carousel, block, vertical, reviws, footer
+	.section #{$name}
+		background-image: url(img/#{$name}.jpg)
+
+// while - циклично выводит пока выражение верно
+
+$i: 7
+@while $i > 0
+	.item #{$i}
+		width: 1em * $i
+	$i: $i - 3
+
+// миксины
+
+@mixin border($color) // делаем миксин, названи + параметры
+	border: $color 1px solid // место куда будут вставлятся параметры
+
+p
+	@include border(#333) // вызов миксина
