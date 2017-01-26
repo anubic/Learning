@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>expo</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>	
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/template.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<div class="header-bg">
+				<div class="logo">
+					<a href="index.html" class="logo-link"></a>
+				</div>
+				<div class="language-select">
+				<select>
+					<option>Русский</option>
+					<option>English</option>
+				</select>
+				</div>
+				<div class="dropdwn-menu">
+					<div class="menu-items">
+						<a href="page1.html" class="menu-link dropdown"><div class="gapper"><div class="menu-wrapper"><p class="label">О&nbsp;КОМПАНИИ</p></div></div></a>
+						<a href="page2.html" class="menu-link"><div class="gapper"><div class="menu-wrapper"><p class="label">ОРГАНИЗАТОРАМ&nbsp;ВЫСТАВОК</p></div></div></a>
+						<a href="page3.html" class="menu-link"><div class="gapper"><div class="menu-wrapper"><p class="label">УЧАСТНИКАМ&nbsp;ВЫСТАВОК</p></div></div></a>
+						<a href="page4.html" class="menu-link"><div class="gapper"><div class="menu-wrapper"><p class="label">КОНТАКТЫ</p></div></div></a>
+					</div>
+					<div class="drop-wrapper">
+						<div class="drop-items">
+							<a href="page1-1.html" class="drop-link active"><div class="gapper"><div class="menu-wrapper"><p class="label">ПОРТФОЛИО</p></div></div></a>
+							
+						</div>
+					</div>
+				</div>
+		</div>	
+	</header><!-- .header-->
+
+	<main class="content">
+		<h1>Портфолио</h1>
+		<div class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=0	data-cycle-pager="#no-template-pager" data-cycle-pager-template="">
+			<div class="cycle-overlay"></div>	
+			<img src="img/gallery/gallery1.jpg" data-cycle-desc="Стенд компании ... на выставке ...">
+			<img src="img/gallery/gallery2.jpg" data-cycle-desc="Стенд компании ... на выставке ...">
+			<img src="img/gallery/gallery3.jpg" data-cycle-desc="Стенд компании ... на выставке ...">
+			<img src="img/gallery/gallery4.jpg" data-cycle-desc="Стенд компании ... на выставке ...">
+			<img src="img/gallery/gallery5.jpg" data-cycle-desc="Стенд компании ... на выставке ...">
+			<img src="img/gallery/gallery6.jpg" data-cycle-desc="Стенд компании ... на выставке ...">
+			<img src="img/gallery/gallery7.jpg" data-cycle-desc="Стенд компании ... на выставке ...">
+		</div>
+		<div id="no-template-pager" class="cycle-pager external">
+			<!-- using thumbnail image files would be even better! -->
+			<img src="img/gallery/gallery1.jpg" width=68 height=52>
+			<img src="img/gallery/gallery2.jpg" width=68 height=52> 
+			<img src="img/gallery/gallery3.jpg" width=68 height=52> 
+			<img src="img/gallery/gallery4.jpg" width=68 height=52>
+			<img src="img/gallery/gallery5.jpg" width=68 height=52>
+			<img src="img/gallery/gallery6.jpg" width=68 height=52>
+			<img src="img/gallery/gallery7.jpg" width=68 height=52>
+		</div>
+		<h1 class="comment-header">Отзывы наших клиентов</h1>
+		<div class="content-block">
+			<div class="comment">
+			<img src="img/daria.jpg"> 
+			<p class="name">Дарья Самоварова<p>
+			<p><em>Филиал компании "Квэрнер в России"</em></p>
+			<br>
+			<p>«...Мы сотрудничали с М.С.Экспо при подготовке нашей экспозици на 21 Мировом нефтяном конгрессе, и были приятно удивлены тем, как опреативно, но с сохранением качества сработала компания...»​</p>
+			</div>
+			<div class="clr">.</div>
+			<hr class="separator">
+			<div class="comment">
+			<img src="img/nastya.jpg">
+			<p class="name">Анастасия Караваева<p>
+			<p><em>CB Group Rus</em></p>
+			<br>
+			<p>“О, божечки-боже, это было незабываемо! Мимими!”</p>
+			</div>
+			<div class="clr">.</div>
+			<hr class="separator">
+			<div class="comment">
+			<img src="img/mich.jpg">
+			<p class="name">Michelle Ryder<p>
+			<p><em>Apple</em></p>
+			<br>
+			<p>“Guys, you're amazing!”​</p>
+			</div>
+			<div class="clr">.</div>
+		</div>
+	</main><!-- .content -->
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="line"></div>
+			<div class="copyright"><p>© 1998-2014 М.С.Экспо, ООО</p></div>			
+		</div>
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+</body>
+</html>

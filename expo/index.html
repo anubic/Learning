@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>expo</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+	<script src="js/template.js"></script>
+				<script type="text/javascript">
+			$(function() {
+				$('#carousel').carouFredSel({
+					width: '100%',
+					items: {
+						visible: 3,
+						start: -1
+					},
+					scroll: {
+						items: 1,
+						duration: 1000,
+						timeoutDuration: 3000
+					},
+					prev: '#prev',
+					next: '#next',
+					pagination: {
+						container: '#pager',
+						deviation: 1
+					}
+				});
+			});
+			</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<div class="header-bg">
+				<div class="logo">
+					<a href="index.html" class="logo-link"></a>
+				</div>
+				<div class="language-select">
+				<select>
+					<option>Русский</option>
+					<option>English</option>
+				</select>
+				</div>
+				<div class="dropdwn-menu">
+					<div class="menu-items">
+						<a href="index.html" class="menu-link dropdown"><div class="gapper"><div class="menu-wrapper"><p class="label">О&nbsp;КОМПАНИИ</p></div></div></a>
+						<a href="page2.html" class="menu-link"><div class="gapper"><div class="menu-wrapper"><p class="label">ОРГАНИЗАТОРАМ&nbsp;ВЫСТАВОК</p></div></div></a>
+						<a href="page3.html" class="menu-link"><div class="gapper"><div class="menu-wrapper"><p class="label">УЧАСТНИКАМ&nbsp;ВЫСТАВОК</p></div></div></a>
+						<a href="page4.html" class="menu-link"><div class="gapper"><div class="menu-wrapper"><p class="label">КОНТАКТЫ</p></div></div></a>
+					</div>
+					<div class="drop-wrapper">
+						<div class="drop-items">
+							<a href="page1-1.html" class="drop-link"><div class="gapper"><div class="menu-wrapper"><p class="label">ПОРТФОЛИО</p></div></div></a>
+							
+						</div>
+					</div>
+				</div>
+		</div>	
+	</header><!-- .header-->
+
+	<main class="content">
+		<div class="line-top"></div>
+		<div class="slider">
+		<div id="carousel-wrapper">
+			<div id="carousel">
+				<img src="img/folio/folio1.jpg" width="785" height="450" />
+				<img src="img/folio/folio2.jpg" width="785" height="450" />
+				<img src="img/folio/folio3.jpg" width="785" height="450" />
+				<img src="img/folio/folio4.jpg" width="785" height="450" />
+			</div>
+				<a href="#" id="prev" title="Show previous"> </a>
+				<a href="#" id="next" title="Show next"> </a>
+			<div id="pager"></div>
+		</div>
+		</div>
+		<div class="content-block">
+			<div class="clr">.</div>
+			<div class="content-inline">
+				<h2>Организаторам выставок</h2>
+				<img src="img/main1.jpg">
+				<div class="morelink"><a href="/">Подробнее</a></div>
+			</div>			
+			<div class="content-inline">
+				<h2>Участникам выставок</h2>
+				<img src="img/main2.jpg">
+				<div class="morelink"><a href="/">Подробнее</a></div>
+			</div>
+			<div class="content-inline last-item">
+				<h2>Отзывы наших клиентов</h2>
+				<div class="main-comment">
+					<p>«...Мы сотрудничали с М.С.Экспо при подготовке нашей экспозици на 21 Мировом нефтяном конгрессе,, и были приятно удивлены тем, как опреативно, но с сохранением качества сработала компания...»​</p>
+					<br>
+					<p class="little">Филиал компании "Квэрнер"<br>
+					в России</p>
+				</div>
+			</div>
+			<div class="clr">.</div>
+		</div>
+	</main><!-- .content -->
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="line"></div>
+			<div class="copyright"><p>© 1998-2014 М.С.Экспо, ООО</p></div>			
+		</div>
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+</body>
+</html>
