@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/pickmeup.min.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/jquery.pickmeup.min.js"></script>
+	<script src="js/template.js"></script>
+</head>
+
+<body>
+
+<div class="top">
+	<div class="header clearfix">
+		<div class="phone"><img src="img/phone-msc.png" width="26" height="26">8 (495) 933-78-78 Москва (круглосуточно)</div>
+		<div class="phone"><img src="img/phone-st.png" width="14" height="25">8 (812) 449-45-64 Санкт-Петербург</div>
+		<ul class="links">
+			<li class="currency"><a href="">Изменить валюту<img src="img/rub2.png" width="12" height="16"></a>
+				<ul>
+					<li><a href="">Рубль<img src="img/rub2.png" width="12" height="16"></a></li>
+					<li><a href="">Доллар<img src="img/dollar.png" width="12" height="16"></a></li>
+					<li><a href="">Евро<img src="img/eur.png" width="12" height="16"></a></li>					
+				</ul>
+			</li>
+			<li class="language"><a href="">Выбрать язык<img src="img/arrow-down.png" width="12" height="18"></a>
+				<ul>
+					<li><a href="">Русский</a></li>
+					<li><a href="">English</a></li>
+				</ul>
+			</li>
+			<li class="login">Логин<img src="img/key.png" width="12" height="18">		
+			</li>
+			<div class="login-popup">
+			<form class="login-form">
+				<input class="form-input" type="text" placeholder="Электронная почта">
+				<input class="form-input" type="text" placeholder="Пароль">
+				<button class="btn-login" type="button">Войти</button>
+				<span class="change">Сменить пароль</span>
+				<ul>
+					ИМЕЯ АККАУНТ ВЫ СМОЖЕТЕ:
+					<li>Управлять бронированиями</li>
+					<li>Просматривать историю поиска</li>
+					<li>Отмечать избранные отели</li>
+					<li>Сохранять персональные данные</li>
+				<ul>
+			</form>
+			</div>
+			<div class="login-change">
+			<form class="login-form">
+				<label>Восстановление пароля</label>
+				<input class="form-input" type="text" placeholder="Электронная почта">
+				<a href="">На главную страницу</a>
+				<button class="btn-login" type="button">Отправить</button>
+			</form>
+			</div>
+		</ul>
+	</div><!-- .header-->
+</div>
+<div class="wrapper">
+	<div class="mainnav clearfix">
+		<div class="logo">
+			<a class="logo-link" href="/index.html"></a>
+		</div>
+		<ul class="mainmenu">
+			<li><a href="">ОТЕЛИ</a></li>
+			<li><a href="">ВЫСТАВКИ</a></li>
+			<li><a href="">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+		</ul>
+		<div class="search">
+			<input class="searchword" type="text">
+			<input class="searchbutton" type="submit">
+		</div>
+	</div>
+	<div class="middle clearfix">
+		<div class="container">
+			<div class="right-content">
+				<div class="top-form basic-form clearfix">
+					<label class="top-label">Поиск отелей</label>
+					<div class="form-inline clearfix">
+						<div class="form-group">
+							<input class="form-input" type="text" placeholder="Выберите город">
+							<input class="btn-list" type="button">
+							<input class="form-input" type="text" placeholder="Все гостиницы">
+							<input class="btn-list" type="button">
+						</div>
+						<div class="form-group pull-right">
+							<div>
+							<input class="form-input-size margin-left date" size="13" type="text" placeholder="Дата вылета">
+							<input class="btn-calendar small" type="button">
+							</div>
+							<div>
+							<input class="form-input-size date" size="13" type="text" placeholder="Дата возврата">
+							<input class="btn-calendar small last-item" type="button">
+							</div>
+						</div>
+					</div>
+					<div class="searchbuttons">
+						<button class="btn-search" type="button">Поиск</button>
+						<button class="btn-searchmore" type="button">Расширенный поиск</button>
+					</div>
+				</div>
+				<table class="hotel-list" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td class="hotel-photo"><img src="img/hotel1.png"></td>
+							<td class="hotel-info">
+								<h2>Гостиница Националь Москва <span class="stars"></span></h2>
+								<p><a class="description" href="">Описание</a><a class="map" href="">На карте</a><a class="photo" href="">Фото</a></p>
+								<p>Маховая ул.15/1, Тверской, Москва</p>
+							</td>
+							<td class="price">Стоимость проживания за выбраный период от<br><span class="hotel-price">270 руб</span></td>
+						</tr>
+						<tr>
+							<td class="hotel-photo"><img src="img/hotel2.png"></td>
+							<td class="hotel-info">
+								<h2>Кравун Савой <span class="stars"></span></h2>
+								<p><a class="description" href="">Описание</a><a class="map" href="">На карте</a><a class="photo" href="">Фото</a></p>
+								<p>Улица рождественка 3/6 стр. 1, Мещанский, Москва</p>							
+							</td>
+							<td class="price">Стоимость проживания за выбраный период от<br><span class="hotel-price">3000 руб</span></td>
+						</tr>
+						<tr>
+							<td class="hotel-photo"><img src="img/hotel1.png"></td>
+							<td class="hotel-info">
+								<h2>Гостиница Националь Москва <span class="stars"></span></h2>
+								<p><a class="description" href="">Описание</a><a class="map" href="">На карте</a><a class="photo" href="">Фото</a></p>
+								<p>Маховая ул.15/1, Тверской, Москва</p>
+							</td>
+							<td class="price">Стоимость проживания за выбраный период от<br><span class="hotel-price">270 руб</span></td>
+						</tr>
+						<tr>
+							<td class="hotel-photo"><img src="img/hotel2.png"></td>
+							<td class="hotel-info">
+								<h2>Кравун Савой <span class="stars"></span></h2>
+								<p><a class="description" href="">Описание</a><a class="map" href="">На карте</a><a class="photo" href="">Фото</a></p>
+								<p>Улица рождественка 3/6 стр. 1, Мещанский, Москва</p>							
+							</td>
+							<td class="price">Стоимость проживания за выбраный период от<br><span class="hotel-price">3000 руб</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- .content -->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+			<ul class="left-menu">
+				<li><a href="">Бронирование гостиницы</a></li>
+				<li><a href="">Билеты</a></li>
+				<li><a href="">Заказ транспорта и&nbsp;экскурсии</a></li>
+				<li><a href="">Подбор<br>конференц-зала</a></li>
+				<li class="active"><a href="">Отели</a></li>
+				<li><a href="">Выставки</a></li>
+				<li><a href="">Спецпредложения</a></li>
+				<li><a href="">Организация конференций</a></li>
+				<li><a href="">Авиа и ж/д билеты</a></li>
+				<li><a href="">Транспортные услуги</a></li>
+				<li><a href="">Экскурсии</a></li>
+				<li><a href="">Российские визы</a></li>
+			</ul>
+		</div><!-- .right-sidebar -->
+	</div>
+	<ul class="bottom-menu clearfix">
+		<li class="first-item"><a href="">О нас</a></li>
+		<li><a href="">Корпоратам</a></li>
+		<li><a href="">Агентствам</a></li>
+		<li><a href="">Наши партнеры</a></li>
+		<li><a href="">Способы оплаты</a></li>
+		<li class="last-item"><a href="">Новости</a></li>
+	</ul>
+</div>
+<div class="bottom">
+	<div class="footer">
+		<p class="copy">Реестровый номер туроператора МВТ-000070  ОГРН 1037739180335<br>
+		Сертифицированная система качества – ISO 9001  © Reisebuero Welt 2014</p>
+		<ul>
+			<li><a href="">Обратная связь</a></li>
+			<li><a href="">Контакты</a></li>
+			<li><a href="">Карта сайта</a></li>
+		</ul>
+	</div><!-- .footer -->
+</div>
+
+<!-- .wrapper -->
+
+</body>
+</html>

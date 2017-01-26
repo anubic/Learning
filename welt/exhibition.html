@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/pickmeup.min.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/jquery.pickmeup.min.js"></script>
+	<script src="js/template.js"></script>
+</head>
+
+<body>
+
+<div class="top">
+	<div class="header clearfix">
+		<div class="phone"><img src="img/phone-msc.png" width="26" height="26">8 (495) 933-78-78 Москва (круглосуточно)</div>
+		<div class="phone"><img src="img/phone-st.png" width="14" height="25">8 (812) 449-45-64 Санкт-Петербург</div>
+		<ul class="links">
+			<li class="currency"><a href="">Изменить валюту<img src="img/rub2.png" width="12" height="16"></a>
+				<ul>
+					<li><a href="">Рубль<img src="img/rub2.png" width="12" height="16"></a></li>
+					<li><a href="">Доллар<img src="img/dollar.png" width="12" height="16"></a></li>
+					<li><a href="">Евро<img src="img/eur.png" width="12" height="16"></a></li>					
+				</ul>
+			</li>
+			<li class="language"><a href="">Выбрать язык<img src="img/arrow-down.png" width="12" height="18"></a>
+				<ul>
+					<li><a href="">Русский</a></li>
+					<li><a href="">English</a></li>
+				</ul>
+			</li>
+			<li class="login">Логин<img src="img/key.png" width="12" height="18">		
+			</li>
+			<div class="login-popup">
+			<form class="login-form">
+				<input class="form-input" type="text" placeholder="Электронная почта">
+				<input class="form-input" type="text" placeholder="Пароль">
+				<button class="btn-login" type="button">Войти</button>
+				<span class="change">Сменить пароль</span>
+				<ul>
+					ИМЕЯ АККАУНТ ВЫ СМОЖЕТЕ:
+					<li>Управлять бронированиями</li>
+					<li>Просматривать историю поиска</li>
+					<li>Отмечать избранные отели</li>
+					<li>Сохранять персональные данные</li>
+				<ul>
+			</form>
+			</div>
+			<div class="login-change">
+			<form class="login-form">
+				<label>Восстановление пароля</label>
+				<input class="form-input" type="text" placeholder="Электронная почта">
+				<a href="">На главную страницу</a>
+				<button class="btn-login" type="button">Отправить</button>
+			</form>
+			</div>
+		</ul>
+	</div><!-- .header-->
+</div>
+<div class="wrapper">
+	<div class="mainnav clearfix">
+		<div class="logo">
+			<a class="logo-link" href="/index.html"></a>
+		</div>
+		<ul class="mainmenu">
+			<li><a href="">ОТЕЛИ</a></li>
+			<li><a href="">ВЫСТАВКИ</a></li>
+			<li><a href="">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+		</ul>
+		<div class="search">
+			<input class="searchword" type="text">
+			<input class="searchbutton" type="submit">
+		</div>
+	</div>
+	<div class="middle clearfix">
+		<div class="container">
+			<div class="right-content">
+				<div class="top-form exhibition-form clearfix">
+					<label class="top-label">Выбор выставки</label>
+					<div class="form-inline clearfix">
+						<div class="form-group">
+							<input class="form-input left-width" type="text" placeholder="Название выставки">
+						</div>
+						<div class="form-group pull-right">
+							<input class="form-input" type="text" placeholder="Город проведения">
+							<input class="btn-list" type="button">
+						</div>
+					</div>
+					<div class="form-inline clearfix">
+						<div class="form-group">
+							<div class="date-label">
+								<label class="input-label">Показать выставки с:</label>
+								<label class="input-label input-label-marg">по:</label>
+							</div>
+							<div>								
+								<input class="form-input-date date" type="text" placeholder="Дата заезда">
+								<button class="btn-calendar small" type="button"></button>
+							</div>
+							<div>
+								<input class="form-input-date date" type="text" placeholder="Дата выезда">
+								<button class="btn-calendar last-item small" type="button"></button>
+							</div>
+						</div>
+						<div class="form-group pull-right">
+							<div class="date-label">
+								<label class="input-label">Выставочная площадка:</label>
+							</div>							
+							<select class="form-select">
+								<option>Все площадки</option>
+							</select>
+						</div>
+					</div>
+					<div class="searchbuttons">
+						<button class="btn-search" type="button">Показать</button>
+					</div>
+				</div>
+				<table class="hotel-card" cellpadding="0" cellspacing="0">
+					<thead>
+						<tr>
+							<td>Период проведения </td>
+							<td>Название выставки</td>
+							<td>Город проведения</td>
+							<td>Место проведения</td>
+							<td class="last-item">Заявка на бронирование гостиницы</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>01.06.14-18.09.14</td>
+							<td>МЕХА НА ВВЦ - 2014<br>Выставка-ярмарка</td>
+							<td>Москва</td>
+							<td>ГАО ВВЦ</td>
+							<td class="last-item"><a class="download" href="">Скачать<img src="img/download.png"></a></td>
+						</tr>
+						<tr>
+							<td>10.09.14-20.09.14</td>
+							<td>МАРГАРИТИНСКАЯ ЯРМАРКА - 2014<br>Межрегиональная выставка-ярмарка</td>
+							<td>Архангельск</td>
+							<td>«Поморская ярмарка»</td>
+							<td class="last-item"></td>
+						</tr>
+						<tr>
+							<td>11.09.14-16.09.14</td>
+							<td>FASHION SALON - 2014<br>VIII специализированная выставка</td>
+							<td>Сочи</td>
+							<td>Морвокзал, Южный мол</td>
+							<td class="last-item"><a class="download" href="">Скачать<img src="img/download.png"></a></td>
+						</tr>
+						<tr>
+							<td>11.09.14-16.09.14</td>
+							<td>ЗОЛОТО ЛЕТНЕЙ СТОЛИЦЫ. Осень - 2014<br>VIII ювелирная выставка-ярмарка</td>
+							<td>Сочи</td>
+							<td>Морвокзал, Южный мол</td>
+							<td class="last-item"></td>
+						</tr>
+						<tr>
+							<td>15.09.14-16.09.14</td>
+							<td>UNITED COFFEE & TEA INDUSTRY EVENT - 2014<br>Международная объединенная кофейно- чайная конференция и индустриальная выставка</td>
+							<td>Москва</td>
+							<td>Сокольники, КВЦ</td>
+							<td class="last-item"><a class="download" href="">Скачать<img src="img/download.png"></a></td>
+						</tr>
+						<tr>
+							<td>15.09.14-17.09.14</td>
+							<td>ОЧКОВАЯ ОПТИКА – 2014<br>15-я международная специализированная выставка </td>
+							<td>Москва</td>
+							<td>КРОКУС ЭКСПО</td>
+							<td class="last-item"></td>
+						</tr>
+						<tr>
+							<td>15.09.14-18.09.14</td>
+							<td>ВЕСЬ МИР ПИТАНИЯ / WORLD FOOD - 2014<br>23-я международная выставка продуктов питания и напитков </td>
+							<td>Москва</td>
+							<td>Экспоцентр на Красной Пресне</td>
+							<td class="last-item"></td>
+						</tr>
+						<tr>
+							<td>15.09.14-18.09.14</td>
+							<td>LINGERIE-EXPO. ОСЕНЬ - 2014<br>Международная выставка нижнего белья, пляжной моды и чулочных изделий </td>
+							<td>Москва</td>
+							<td>КРОКУС ЭКСПО</td>
+							<td class="last-item"><a class="download" href="">Скачать<img src="img/download.png"></a></td>
+						</tr>
+						<tr>
+							<td>15.09.14-18.09.14</td>
+							<td>HOUSEHOLD EXPO - 2014<br>14-я международная специализированная выставка </td>
+							<td>Москва</td>
+							<td>КРОКУС ЭКСПО</td>
+							<td class="last-item"></td>
+						</tr>
+					</tbody>					
+				</table>
+			</div><!-- .content -->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+			<ul class="left-menu">
+				<li><a href="">Бронирование гостиницы</a></li>
+				<li><a href="">Билеты</a></li>
+				<li><a href="">Заказ транспорта и&nbsp;экскурсии</a></li>
+				<li><a href="">Подбор<br>конференц-зала</a></li>
+				<li class="active"><a href="">Отели</a></li>
+				<li><a href="">Выставки</a></li>
+				<li><a href="">Спецпредложения</a></li>
+				<li><a href="">Организация конференций</a></li>
+				<li><a href="">Авиа и ж/д билеты</a></li>
+				<li><a href="">Транспортные услуги</a></li>
+				<li><a href="">Экскурсии</a></li>
+				<li><a href="">Российские визы</a></li>
+			</ul>
+		</div><!-- .right-sidebar -->
+	</div>
+	<ul class="bottom-menu clearfix">
+		<li class="first-item"><a href="">О нас</a></li>
+		<li><a href="">Корпоратам</a></li>
+		<li><a href="">Агентствам</a></li>
+		<li><a href="">Наши партнеры</a></li>
+		<li><a href="">Способы оплаты</a></li>
+		<li class="last-item"><a href="">Новости</a></li>
+	</ul>
+</div>
+<div class="bottom">
+	<div class="footer">
+		<p class="copy">Реестровый номер туроператора МВТ-000070  ОГРН 1037739180335<br>
+		Сертифицированная система качества – ISO 9001  © Reisebuero Welt 2014</p>
+		<ul>
+			<li><a href="">Обратная связь</a></li>
+			<li><a href="">Контакты</a></li>
+			<li><a href="">Карта сайта</a></li>
+		</ul>
+	</div><!-- .footer -->
+</div>
+
+<!-- .wrapper -->
+
+</body>
+</html>
