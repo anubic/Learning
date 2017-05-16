@@ -1,0 +1,46 @@
+[
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"characters": "console."
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "log"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "("
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"characters": ");"
+		},
+		"command": "insert"
+	}
+]

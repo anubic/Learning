@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AutoFileName",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Emmet",
+		"Gist",
+		"Goto-CSS-Declaration",
+		"Material Theme",
+		"Package Control",
+		"Sass",
+		"SublimeCodeIntel",
+		"Terminal"
+	]
+}
