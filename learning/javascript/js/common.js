@@ -329,11 +329,11 @@ console.log(homecity);
 // } // парсер сравнивает выражение в скобках и если она true выполняет инструкцию, а так же все инструкции что идут ниже
 // если не одно выражение не правдива используется инструкция default
 
-var name = "anubic", homecity;
+var name = "James", homecity;
 switch(name) {
 	case "Jonh": homecity = "Boston"; break; // break инструкция выхода из цикла, благодаря ней все инструкции ниже выполнятся не будут.
 	case "anubic": homecity = "Kiev"; break;
-	case "James": homecity = "LA";
+	case "James": homecity = "LA"; break;
 	default: homecity = "NY";
 }
 
