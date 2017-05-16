@@ -1,4 +1,0 @@
-[
-	{ "keys": ["alt+shift+f"], "command": "reindent" },
-	{"keys": ["ctrl+shift+y"], "command": "run_macro_file", "args": {"file": "res://Packages/User/console.sublime-macro"}},
-]
